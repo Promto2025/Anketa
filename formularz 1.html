@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Formularz zapytania o usługi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .submit-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+    .section {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/digitalprostudio2025@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://thankyou.page">
+
+    <h2>Zapytanie ofertowe – Wentylacja i Rekuperacja</h2>
+
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name" name="Imię i nazwisko" required>
+
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="Adres e-mail" required>
+
+    <label for="phone">Numer telefonu:</label>
+    <input type="tel" id="phone" name="Telefon" required>
+
+    <div class="section">
+      <label>Jakie usługi Państwa interesują?</label>
+      <label><input type="checkbox" name="Usługi" value="Wentylacja mechaniczna"> Wentylacja mechaniczna</label><br>
+      <label><input type="checkbox" name="Usługi" value="Rekuperacja (odzysk ciepła)"> Rekuperacja (odzysk ciepła)</label><br>
+      <label><input type="checkbox" name="Usługi" value="Projekt systemu wentylacyjnego"> Projekt systemu wentylacyjnego</label><br>
+      <label><input type="checkbox" name="Usługi" value="Montaż instalacji"> Montaż instalacji</label><br>
+      <label><input type="checkbox" name="Usługi" value="Serwis i przeglądy"> Serwis i przeglądy</label><br>
+      <label><input type="checkbox" name="Usługi" value="Modernizacja istniejącej instalacji"> Modernizacja istniejącej instalacji</label><br>
+    </div>
+
+    <label for="typ_budynku">Typ budynku:</label>
+    <select id="typ_budynku" name="Typ budynku" required>
+      <option value="">-- Wybierz --</option>
+      <option value="Dom jednorodzinny">Dom jednorodzinny</option>
+      <option value="Mieszkanie">Mieszkanie</option>
+      <option value="Biuro">Biuro</option>
+      <option value="Obiekt usługowy lub handlowy">Obiekt usługowy lub handlowy</option>
+      <option value="Inny">Inny</option>
+    </select>
+
+    <label for="powierzchnia">Powierzchnia budynku (m²):</label>
+    <input type="text" id="powierzchnia" name="Powierzchnia budynku" placeholder="np. 120 m²">
+
+    <label for="lokalizacja">Lokalizacja inwestycji:</label>
+    <input type="text" id="lokalizacja" name="Lokalizacja" placeholder="Miasto / miejscowość">
+
+    <label for="termin">Planowany termin realizacji:</label>
+    <input type="text" id="termin" name="Termin realizacji" placeholder="np. Czerwiec 2025">
+
+    <label for="dodatkowe">Dodatkowe informacje / pytania:</label>
+    <textarea id="dodatkowe" name="Dodatkowe informacje" rows="4" placeholder="Np. piętrowość, dodatkowe wymagania, wentylacja w łazienkach, preferencje sprzętu..."></textarea>
+
+    <button type="submit" class="submit-btn">Wyślij formularz</button>
+  </form>
+</body>
+</html>
